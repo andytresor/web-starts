@@ -1,0 +1,57 @@
+section {
+    width: 500px;
+    background-color: lightblue;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 7px;
+    text-align: center;
+    padding: 0.1px 0px;
+}
+
+.img-container {
+    /* background-color: black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+div {
+    background-color: black;
+    color: wheat;
+}
+
+#profile-name {
+    font-size: 25px;
+    color: orange;
+}
+
+#profile-name span,
+#profile-email span {
+    background: #0574ef;
+    padding: 3px 11px;
+    border-radius: 8px
+}
+
+#profile-email {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+div.detail-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

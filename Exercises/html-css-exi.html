@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table {
-           border-collapse: collapse;
-        }
-           
-    </style>
 </head>
 <body>
-    <table border="1px"> 
+   <header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Section1">Section1</a></li>
+            <li><a href="#Section2">Secton2</a></li>
+            <li><a href="#Footer">Footer</a></li>
+        </ul>
+    </nav>
+   </header> 
+   <main>
+    <section> <table border="1px"> 
         <tr>
             <th>NAME</th>
             <th>GENDER</th>
@@ -59,6 +64,30 @@
                 <td>697987654</td>
                 <td>charle45@gmail.com</td>
             </tr>
-    </table>
+    </table></section>
+    <section><p>Choose your favorite section:</p>
+
+        <form>
+          <input type="radio" id="section1" name="section1" value="Section1">
+          <label for="section1">Section1</label><br>
+          <input type="radio" id="section2" name="section2" value="Section2">
+          <label for="section2">Section2</label><br>
+          <input type="radio" id="footer" name="footer" value="footer">
+          <label for="footer">Footer</label>
+        </form></section>
+   </main>
+   <footer>
+    <form>
+        <p>Fill the following</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+    <input type="submit" value="Submit">
+    </form>
+    <img src="IMG_20210302_121631_949.jpg" alt="mood" style="width:100px; height:100px;"><br>
+    <div>&copy; Copyright 2022 Restricted
+    </div>
+   </footer>
 </body>
 </html>
