@@ -9,7 +9,7 @@ body {
     padding: 6px 8px;
 }
 
-header#header-section6 {
+header#header-section + {
     height: 100vh;
     background: url('../assets/images/landscape.png');
     background-position: center;

@@ -41,11 +41,14 @@ header.header-container nav ul.navbar-container li:hover {
     background-color: orange;
     color: black;
     transition: 2s;
+    cursor: pointer;
 }
 header.header-container div.welcome-text-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    justify-content: center;
 }
 
 header.header-container div.welcome-text-container h1.hi-text{
@@ -53,6 +56,8 @@ header.header-container div.welcome-text-container h1.hi-text{
 }
 header.header-container div.welcome-text-container h2.name-text{
     color: whitesmoke;
+    position: relative;
+    animation: hopIn 4s infinite;
 }
 .text-large{
     font-size: 3rem;
@@ -61,4 +66,106 @@ header.header-container div.welcome-text-container h2.name-text{
 .text-medium{
     font-size: 1.5rem;
     font-weight: 600;
+}
+@keyframes hopIn {
+    0% {
+        color: black;
+        top: -3rem;
+        left: -5rem;
+        font-size: 1.8rem;
+    }
+
+    25% {
+        color: green;
+        top: 2rem;
+        left: 5rem;
+        font-size: 2rem;
+    }
+
+    75% {
+        color:red;
+        top: 6rem;
+        left: 8rem;
+        font-size: 3rem;
+    }
+
+    100% {
+        color: blue;
+        top: 10rem;
+        left: 12rem;
+        font-size: 3.5rem;
+    }
+}
+
+.awards-container{
+    color: blue;
+    font-size: 200%;
+}
+header.section-header {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.section-header h1{
+    font-size: 2rem;
+    color: teal;
+    font-weight: 800;
+}
+
+
+header.section-header > p {
+   position: relative;
+   top: -2.1rem; 
+    width: 6.5rem;
+    height: 5px;
+    background-color: orange;
+    /*transition: 1s ease-in;*/
+    animation: growOut 1s infinite;
+}
+
+/*project secton*/
+div.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+div.project-preview{
+    width: 35rem;
+}
+
+div.project-preview img {
+    width: 100%;
+    height: 20rem;
+    cursor: pointer;
+    background-color: linear-gradient( to right, green);
+}
+div.project-preview img:hover {
+    animation: scaleOut 1s linear;
+}
+@keyframes growOut{
+    from{
+        width: 0rem;
+        background-color: black;
+    }
+    to{
+        width: 8.5rem;
+        background-color: orange;
+    }
+}
+@keyframes scaleOut{
+    from{
+        transform: scale(1);
+
+    }
+    to{
+        transform: scale(4);
+
+    }
 }
