@@ -4,6 +4,7 @@ body{
     font-family: montserrat;
     height: 100vh;
     overflow: hidden;
+    background-color: black;
 }
 .center{
     position: absolute;
@@ -41,7 +42,7 @@ form .txt_field{
     position: absolute;
     top: 50%;
     left: 5px;
-    color: #adadad;
+    color: orange;
     transform: translate(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -67,7 +68,7 @@ form .txt_field{
 }
 .pass{
     margin: -5px 0 20px 5px;
-    color: #a6a6a6;
+    color: orange;
     cursor: pointer;
 }
 .pass:hover{
@@ -80,7 +81,7 @@ input[type="submit"]{
     background: #2691d9;
     border-radius: 25px;
     font-size: 18px;
-    color: #e9f4fd;
+    color: orange;
     font-weight: 700;
     cursor: pointer;
     outline: none;
@@ -96,6 +97,7 @@ input[type="submit"]:hover{
     color: #666666;
 }
 .singup_linka{
-    color: #2691d9;
+    color: orange;
     text-decoration: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap');
